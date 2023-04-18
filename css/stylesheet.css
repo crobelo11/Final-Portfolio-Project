@@ -1,10 +1,33 @@
+* /* CSS reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+/* Header */
 header {
   background-color: #333;
   color: #fff;
   padding: 10px;
+}
+
+/* Hobbies list */
+.hobbies-list {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.hobbies-list h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hobbies-list ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.hobbies-list li {
+  margin-bottom: 5px;
 }
