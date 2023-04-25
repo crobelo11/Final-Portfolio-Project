@@ -1,24 +1,28 @@
-/* General Styles */
-
-  body {
+body {
   background-color: #F2F2F2;
   font-family: 'Montserrat', sans-serif;
   color: #333;
   margin: 0;
   padding: 0;
-  }
-  
-  a {
+}
+
+a {
   color: #333;
   text-decoration: none;
-  }
-  
-  h1, h2, h3 {
+  border-bottom: 2px solid #333; /* added underline to links */
+  transition: border-color 0.3s ease; /* added transition effect to underline */
+}
+
+a:hover {
+  border-color: #EB5C0E; /* changed underline color on hover */
+}
+
+h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
-  }
-  
-  /* Header */
-  header {
+}
+
+/* Header */
+header {
   background-color: #333;
   color: #fff;
   display: flex;
@@ -26,74 +30,76 @@
   justify-content: center;
   align-items: center;
   height: 400px;
-  }
-  
-  nav {
+}
+
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  }
-  
-  nav a {
+}
+
+nav a {
   margin: 0 20px;
   font-size: 18px;
-  }
-  
-  h1 {
+}
+
+h1 {
   font-size: 56px;
   margin-bottom: 10px;
   text-align: center;
-  }
-  
-  h2 {
+}
+
+h2 {
   font-size: 28px;
   margin-bottom: 30px;
   text-align: center;
-  }
-  
-  /* Main Content */
-  main {
+}
+
+/* Main Content */
+main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
-  }
-  
-  section {
+}
+
+section {
   margin-bottom: 50px;
-  }
-  
-  section#about p {
+}
+
+section#about p {
   font-size: 18px;
   line-height: 1.5;
   text-align: justify;
-  }
-  
-  section#about img {
+}
+
+section#about img {
   display: block;
   margin: 0 auto;
   width: 100%;
   max-width: 500px;
   height: auto;
   border-radius: 10px;
-  }
-  .center {
+}
+
+.center {
   display: block;
   margin: 0 auto;
   width: 100%;
   max-width: 500px;
   height: auto;
   border-radius: 10px;
-  }
-  section.hobbies ul {
+}
+
+section.hobbies ul {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
-  }
-  
-  section.hobbies li {
+}
+
+section.hobbies li {
   background-color: #fff;
   color: #333;
   font-size: 24px;
@@ -103,90 +109,40 @@
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  }
-  
-  section.hobbies li:hover {
+}
+
+section.hobbies li:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-  }
+}
 
-  /* unvisited link */
-  a:link {
-    color: #6d7a74;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: #EB5C0E;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: #93facb;
-    background-color: hotpink;
-    padding: 2px;
-  }
-  
-  /* selected link */
-  a:active {
-    color: hotpink;
-  }
-  
-  /* Footer */
-  footer {
+/* unvisited link */
+a:link {
+  color: #6d7a74;
+}
+
+/* visited link */
+a:visited {
+  color: #EB5C0E;
+}
+
+/* mouse over link */
+a:hover {
+  color: #93facb;
+  background-color: hotpink;
+  padding: 2px;
+  border-color: #EB5C0E; /* added underline color on hover */
+}
+
+/* selected link */
+a:active {
+  color: hotpink;
+}
+
+/* Footer */
+footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
-  }
-  
-  footer p {
-  font-size: 16px;
-  margin: 0;
-  }
-  
-  /* Media Queries */
-  @media screen and (max-width: 768px) {
-  header {
-  height: 300px;
-  }
-  
-  h1 {
-  font-size: 36px;
-  }
-  
-  h2 {
-  font-size: 24px;
-  }
-  
-  nav a {
-  font-size: 16px;
-  }
-  
-  main {
-  padding: 20px;
-  }
-  }
-  
-  @media screen and (max-width: 576px) {}
-  header {
-  height: 200px;
-  }
-  
-  h1 {
-  font-size: 24px;
-  }
-  
-  h2 {
-  font-size: 18px;
-  }
-  
-  nav {
-  flex-direction: column;
-  margin-bottom: 10px;
-  }
-  
-  nav a {
-  margin: 10px 0;
-  font-size: 14px;
-  }
+}
