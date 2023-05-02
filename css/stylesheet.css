@@ -1,3 +1,4 @@
+/* Body */
 body {
   background-color: #F2F2F2;
   font-family: 'Montserrat', sans-serif;
@@ -6,6 +7,7 @@ body {
   padding: 0;
 }
 
+/* Links */
 a {
   color: #333;
   text-decoration: none;
@@ -17,6 +19,7 @@ a:hover {
   border-color: #EB5C0E; /* changed underline color on hover */
 }
 
+/* Headings */
 h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
 }
@@ -130,6 +133,77 @@ section.hobbies li:hover {
   margin-bottom: 10px;
 }
 
+.methods-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.methods-list li {
+  flex-basis: 30%;
+  margin-bottom: 10px;
+}
+
+.resume-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: grey;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-link:hover {
+  background-color: #333;
+}
+
+.privacy-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: grey;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.privacy-link:hover {
+  background-color: #333;
+}
+
+.terms-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: grey;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.terms-link:hover {
+  background-color: #333;
+}
+
+.about-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: grey;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.about-link:hover {
+  background-color: #333;
+}
+
+
 /* unvisited link */
 a:link {
   color: #6d7a74;
@@ -137,7 +211,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: #EB5C0E;
+  color: #1d0eeb;
 }
 
 /* mouse over link */
